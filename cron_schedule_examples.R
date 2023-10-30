@@ -1,4 +1,4 @@
-library(cronR)
+library(cronR) 
 # First cronR job -------------
 cmd <- cron_rscript(rscript = "increment_one.R")
 cron_add(cmd, frequency = 'minutely', id = 'job1', description = 'Our first cronR job')
