@@ -1,4 +1,4 @@
-# Get the current datetime
+# Get the current datetime 
 date_time <- format(Sys.time(), digits = 0) 
 # Check if "increment_one.rds" exists
 if(file.exists("/home/rstudio/scheduling/increment_one.rds")){
