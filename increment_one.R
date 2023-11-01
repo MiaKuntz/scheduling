@@ -1,4 +1,4 @@
-# Get the current datetime 
+# Get the current datetime  
 date_time <- format(Sys.time(), digits = 0) 
 # Check if "increment_one.rds" exists
 if(file.exists("/home/rstudio/scheduling/increment_one.rds")){
@@ -20,6 +20,4 @@ if(file.exists("/home/rstudio/scheduling/increment_one.rds")){
   # This will be captured by the cronR logger and written to the .log file
   print(paste0(date_time, ": Value of increment_one.rds is ", increment_one))
 }
-
-
 

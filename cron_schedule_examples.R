@@ -34,5 +34,22 @@ cron_ls() # Confirm we have active jobs
 # (so you do not have any jobs active after finishing the examples)
 cron_clear()
 
+# Exercise 9: Remove file ---------------------------
+unlink("increment_one.rds")
+
+# Exercise 10 + 11: Scheduling ---------------------------
+cron_add(cmd, frequency = 'minutely', id = 'job7', days_of_week = 3)
+
+cron_add(cmd, frequency = 'daily', id = 'job8', 
+         at = '04:00', days_of_month = 15)
+
+# Exercise 12: Saving active jobs, then removing active jobs ---------------------------
+# Saving current crontab (holding active cronR jobs)
+cron_save(file = "my_BI_schedule")
+# Removing all cronR jobs in crontab
+cron_clear()
+cron_ls() # Confirming no active jobs
+
+# Exercise 13: Usind Addins at the top menu to manage jobs ---------------------------
 
 

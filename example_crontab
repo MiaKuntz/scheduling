@@ -1,0 +1,38 @@
+
+## cronR job
+## id:   job1
+## tags: 
+## desc: Our first cronR job
+0-59 * * * * /usr/local/lib/R/bin/Rscript '/home/rstudio/scheduling/increment_one.R'  >> '/home/rstudio/scheduling/increment_one.log' 2>&1
+
+## cronR job
+## id:   job2
+## tags: 
+## desc: 
+0 * * * * /usr/local/lib/R/bin/Rscript '/home/rstudio/scheduling/increment_one.R'  >> '/home/rstudio/scheduling/increment_one.log' 2>&1
+
+## cronR job
+## id:   job3
+## tags: 
+## desc: 
+0 * * * 1,2 /usr/local/lib/R/bin/Rscript '/home/rstudio/scheduling/increment_one.R'  >> '/home/rstudio/scheduling/increment_one.log' 2>&1
+
+## cronR job
+## id:   job4
+## tags: 
+## desc: 
+20 * * * 1,2 /usr/local/lib/R/bin/Rscript '/home/rstudio/scheduling/increment_one.R'  >> '/home/rstudio/scheduling/increment_one.log' 2>&1
+
+## cronR job
+## id:   job5
+## tags: 
+## desc: 
+20 14 * * * /usr/local/lib/R/bin/Rscript '/home/rstudio/scheduling/increment_one.R'  >> '/home/rstudio/scheduling/increment_one.log' 2>&1
+
+## cronR job
+## id:   job6
+## tags: 
+## desc: 
+59 23 1,30 * * /usr/local/lib/R/bin/Rscript '/home/rstudio/scheduling/increment_one.R'  >> '/home/rstudio/scheduling/increment_one.log' 2>&1
+
+ 
